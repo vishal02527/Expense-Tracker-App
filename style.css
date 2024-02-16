@@ -1,0 +1,150 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  color: #eee;
+  background-image: radial-gradient(
+    circle farthest-corner at 83.7% 4.3%,
+    rgba(173, 0, 171, 1) 0%,
+    rgba(15, 51, 92, 1) 90%
+  );
+  background-repeat: no-repeat;
+}
+button {
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  padding: 10px 20px;
+  font: inherit;
+  cursor: pointer;
+  border: 1px solid #52c234;
+  color: #fff;
+  background-image: linear-gradient(
+    to right,
+    #52c234 0%,
+    #0e2f02 50%,
+    #52c234 110%
+  );
+  border-radius: 3px;
+}
+
+h1.heading {
+  text-align: center;
+  margin-block: 50px;
+}
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.wrapper .container {
+  max-width: 1150px;
+  padding-inline: 20px;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  align-items: flex-start;
+  gap: 0;
+}
+.form_wrapper {
+  display: grid;
+  gap: 30px;
+  max-width: 430px;
+}
+.form_wrapper form:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.form_wrapper form input,
+select {
+  width: 100%;
+  padding: 10px;
+  font: inherit;
+  outline: none;
+  border: 1px solid #aaa;
+  background-color: transparent;
+  border-radius: 3px;
+  color: #fff;
+}
+select option {
+  background-color: rgb(254, 182, 182);
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px auto;
+}
+th {
+  background-color: #fad961;
+  background-image: linear-gradient(90deg, #fad961 0%, #f76b1c 100%);
+  padding: 10px;
+}
+td {
+  background-image: linear-gradient(
+    174.2deg,
+    rgba(255, 244, 228, 1) 7.1%,
+    rgba(240, 246, 238, 1) 67.4%
+  );
+  color: #333;
+  padding: 5px;
+}
+th,
+td {
+  border: 1px solid #948d8d;
+  text-align: center;
+  font-size: 18px;
+}
+table button {
+  padding: 5px;
+  font-size: 20px;
+  background-color: #00bbf9;
+}
+table button:first-child {
+  margin-right: 8px;
+}
+#expense-table thead th {
+  font-size: 18px;
+  color: #eee;
+}
+.income_tracker_info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.income_tracker_info > div:last-child {
+  grid-column: span 2;
+}
+.income_tracker_info > div {
+  text-align: center;
+  background-color: #111;
+  padding: 30px;
+  font-size: 25px;
+  border-bottom: 2px solid #ff0000;
+}
+.income_tracker_info > div:nth-child(2) {
+  border-color: #ff5300;
+}
+.income_tracker_info > div:last-child {
+  border-color: #00ff00;
+}
+.income_tracker_info > div h1 {
+  margin-block: 20px;
+  word-break: break-all;
+  font-size: 30px;
+}
+
+footer p {
+  text-align: center;
+  margin: 42px 0 30px;
+}
